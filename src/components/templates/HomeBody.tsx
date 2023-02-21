@@ -6,7 +6,6 @@ import {
   BsLinkedin,
   BsGithub
 } from 'react-icons/bs'
-import Image from 'next/image'
 
 
 export default function HomeBody() {
@@ -24,9 +23,6 @@ export default function HomeBody() {
               </li>
           </ul>
         </nav>
-        <div className="relative mx-auto bg-gradient-to-b from-purple-700 flex justify-center items-center rounded-full w-80 h-80 mt-20">
-          <Image src="/../public/my-avatar.png" alt="avatar" width={300} height={300}/>
-        </div>
         <AboutMeSection />
         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
           <BsLinkedin/>
