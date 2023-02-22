@@ -1,12 +1,6 @@
+import { BsFillMoonStarsFill } from 'react-icons/bs'
 import AboutMeSection from '../organisms/AboutMe'
-
-import {
-  BsFillMoonStarsFill,
-  BsDiscord,
-  BsLinkedin,
-  BsGithub
-} from 'react-icons/bs'
-
+import SocialMedia from '../organisms/SocialMedia'
 
 export default function HomeBody() {
   return (
@@ -24,11 +18,7 @@ export default function HomeBody() {
           </ul>
         </nav>
         <AboutMeSection />
-        <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-          <BsLinkedin/>
-          <BsDiscord/>
-          <BsGithub/>
-        </div>
+        <SocialMedia />
       </section>
     </main>   
   )
