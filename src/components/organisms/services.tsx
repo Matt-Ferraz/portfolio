@@ -1,6 +1,11 @@
 import Title from '../atoms/Title';
 import Technologies from '../molecules/technologies';
 import HTML5 from "../assets/html5.svg"
+import CSS from "../assets/CSS.svg"
+import javascript from "../assets/javascript.svg"
+import c from "../assets/c.svg"
+import git from "../assets/git.svg"
+import angular from "../assets/angular.svg"
 
 interface Technology {
   id: number;
@@ -13,11 +18,11 @@ interface Technology {
 export default function MySkills() {
   const techs: Technology[] = [
     { id: 1, label: 'HTML', key: 'html', img: HTML5 },
-    { id: 2, label: 'CSS', key: 'css', img: '' },
-    { id: 3, label: 'JavaScript', key: 'js', img: '' },
-    { id: 4, label: 'C', key: 'c', img: '' },
-    { id: 5, label: 'Git', key: 'git', img: '' },
-    { id: 6, label: 'AngularJS', key: 'angularjs', img: '' },
+    { id: 2, label: 'CSS', key: 'css', img: CSS },
+    { id: 3, label: 'JavaScript', key: 'js', img: javascript },
+    { id: 4, label: 'C', key: 'c', img: c },
+    { id: 5, label: 'Git', key: 'git', img: git },
+    { id: 6, label: 'AngularJS', key: 'angularjs', img: angular },
     { id: 7, label: 'VueJS', key: 'vuejs', img: '' },
     { id: 8, label: 'SourceTree', key: 'sourcetree', img: '' },
     { id: 9, label: 'React', key: 'react', img: '' },
