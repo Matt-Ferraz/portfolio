@@ -1,6 +1,6 @@
 import Title from '../atoms/Title';
 import Technologies from '../molecules/technologies';
-import HTML5 from "../assets/html5.svg"
+// import HTML5 from "../assets/html5.svg"
 
 interface Technology {
   id: number;
