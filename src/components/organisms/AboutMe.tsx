@@ -1,13 +1,15 @@
 import AboutMe from '../molecules/TextAboutMe'
-import Avatar from '../atoms/Avatar'
+import ImageView from '../atoms/ImageView'
 
 export default function AboutMeSection() {
   return (
     <>
-      <Avatar
+      <ImageView
         width={300}
         height={300}
         path="/../public/my-avatar.png"
+        alt="Avatar"  
+        bgGradient={true}
       />
       <AboutMe
         title="Mateus Ferraz"
