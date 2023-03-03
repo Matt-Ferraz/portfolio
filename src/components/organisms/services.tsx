@@ -6,6 +6,13 @@ import javascript from "../assets/javascript.svg"
 import c from "../assets/c.svg"
 import git from "../assets/git.svg"
 import angular from "../assets/angular.svg"
+import vue from "../assets/vue.svg"
+import sourcetree from "../assets/sourcetree.svg"
+import react from "../assets/react.svg"
+import node from "../assets/node.svg"
+import express from "../assets/express.svg"
+import docker from "../assets/docker.svg"
+import mysql from "../assets/mysql.svg"
 
 interface Technology {
   id: number;
@@ -23,14 +30,13 @@ export default function MySkills() {
     { id: 4, label: 'C', key: 'c', img: c },
     { id: 5, label: 'Git', key: 'git', img: git },
     { id: 6, label: 'AngularJS', key: 'angularjs', img: angular },
-    { id: 7, label: 'VueJS', key: 'vuejs', img: '' },
-    { id: 8, label: 'SourceTree', key: 'sourcetree', img: '' },
-    { id: 9, label: 'React', key: 'react', img: '' },
-    { id: 10, label: 'Node.js', key: 'nodejs', img: '' },
-    { id: 11, label: 'Express', key: 'express', img: '' },
-    { id: 12, label: 'Git', key: 'git2', img: '' },
-    { id: 13, label: 'Docker', key: 'docker', img: '' },
-    { id: 14, label: 'MySQL', key: 'mysql', img: '' },
+    { id: 7, label: 'VueJS', key: 'vuejs', img: vue },
+    { id: 8, label: 'SourceTree', key: 'sourcetree', img: sourcetree },
+    { id: 9, label: 'React', key: 'react', img: react },
+    { id: 10, label: 'NodeJS', key: 'nodejs', img: node },
+    { id: 11, label: 'Express', key: 'express', img: express },
+    { id: 13, label: 'Docker', key: 'docker', img: docker },
+    { id: 14, label: 'MySQL', key: 'mysql', img: mysql },
   ];
   return (
     <div className="w-full mt-10 flex flex-col items-center justify-center">
