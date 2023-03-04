@@ -1,7 +1,7 @@
 import Title from '../atoms/Title';
 import Technologies from '../molecules/technologies';
 import HTML5 from "../assets/html5.svg"
-import CSS from "../assets/CSS.svg"
+import CSS from "../assets/css.svg"
 import javascript from "../assets/javascript.svg"
 import c from "../assets/c.svg"
 import git from "../assets/git.svg"
@@ -13,13 +13,7 @@ import node from "../assets/node.svg"
 import express from "../assets/express.svg"
 import docker from "../assets/docker.svg"
 import mysql from "../assets/mysql.svg"
-
-interface Technology {
-  id: number;
-  label: string;
-  key: string;
-  img?: string;
-}
+import { Technology } from '../molecules/technologies';
 
 
 export default function MySkills() {
