@@ -28,7 +28,7 @@ export default function MySkills() {
     { id: 8, label: 'SourceTree', key: 'sourcetree', img: sourcetree },
     { id: 9, label: 'React', key: 'react', img: react },
     { id: 10, label: 'NodeJS', key: 'nodejs', img: node },
-    { id: 11, label: 'Express', key: 'express', img: express },
+    // { id: 11, label: 'Express', key: 'express', img: express },
     { id: 13, label: 'Docker', key: 'docker', img: docker },
     { id: 14, label: 'MySQL', key: 'mysql', img: mysql },
   ];

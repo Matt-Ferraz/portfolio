@@ -8,7 +8,7 @@ export default function ULsection() {
       </li>
       <li>
         <a className="bg-gradient-to-r from-gray-900 to-purple-700 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a>
-        </li>
+      </li>
     </ul>
   )
 }
