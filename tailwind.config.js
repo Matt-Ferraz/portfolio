@@ -9,6 +9,10 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      "primary": "#151515",
+      "off-white": "#ccc"
+    },
     extend: {
       fontFamily: {
         burtons: "burtons"

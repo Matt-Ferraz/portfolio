@@ -5,12 +5,14 @@ import MySkills from '../organisms/services'
 
 export default function HomeBody() {
   return (
-    <main className="bg-white px-10">
-      <section className="min-h-screen">
+    <main className="bg-primary px-10">
+      <section className="min-h-screen scroll-smooth">
         <Nav />
         <AboutMeSection />
-        <SocialMedia />
+        <div className="mt-64">
         <MySkills />
+        </div>
+        <SocialMedia />
       </section>
     </main>   
   )

@@ -1,13 +1,18 @@
-import { BsFillMoonStarsFill } from 'react-icons/bs'
-
 export default function ULsection() {
+  const scroll = (x:number, y: number) => {
+    // window.scroll(x, y)
+    alert(`${y}`)
+  }
   return (
     <ul className="flex items-center">
       <li>
-        <BsFillMoonStarsFill className="cursor-pointer text-2xl"/>
+        <a className="text-off-white px-4 py-2 rounded-md ml-8 hover:text-primary hover:bg-off-white hover:rounded-md  duration-700">My resume</a>
       </li>
       <li>
-        <a className="bg-gradient-to-r from-gray-900 to-purple-700 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a>
+        <a className="text-off-white px-4 py-2 rounded-md ml-8 hover:text-primary hover:bg-off-white hover:rounded-md  duration-700" href="#">My work</a>
+      </li>
+      <li>
+        <a className="text-off-white px-4 py-2 rounded-md ml-8 hover:text-primary hover:bg-off-white hover:rounded-md  duration-700" href="#">About me</a>
       </li>
     </ul>
   )

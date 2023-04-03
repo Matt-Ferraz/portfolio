@@ -9,7 +9,6 @@ export default function AboutMeSection() {
         height={300}
         path="/../public/my-avatar.png"
         alt="Avatar"  
-        bgGradient={true}
       />
       <AboutMe
         title="Mateus Ferraz"
