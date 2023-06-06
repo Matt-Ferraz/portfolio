@@ -7,7 +7,7 @@ export default function AboutMeSection() {
             <ImageView
                 width={300}
                 height={300}
-                path="/../public/my-avatar.png"
+                path="/apple-avatar.png"
                 alt="Avatar"
             />
             <AboutMe

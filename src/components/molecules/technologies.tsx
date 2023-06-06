@@ -16,7 +16,7 @@ export default function Technologies({ techs }: TechnologiesProps) {
             {techs.map((tech) => (
                 <div
                     key={tech.id}
-                    className="flex flex-col rounded-xl mx-4 my-2 p-2 duration-700 cursor-pointer hover:bg-primary items-center justify-center"
+                    className="flex flex-col rounded-xl mx-4 my-2 p-2 duration-700 cursor-pointer hover:shadow-md hover:shadow-primary items-center justify-center"
                 >
                     <ImageView
                         width={150}
