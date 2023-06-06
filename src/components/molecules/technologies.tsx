@@ -1,27 +1,32 @@
 import SubTitle from "../atoms/SubTitle";
 import ImageView from "../atoms/ImageView";
 export interface Technology {
-  id: number;
-  label: string;
-  key: string;
-  img: string;
+    id: number;
+    label: string;
+    key: string;
+    img: string;
 }
-
-interface Technologies extends Array<Technology> {}
-
 interface TechnologiesProps {
-  techs: Technology[]
+    techs: Technology[];
 }
 
 export default function Technologies({ techs }: TechnologiesProps) {
-  return (
-    <div className="flex flex-wrap my-3 justify-center">
-      {techs.map((tech) => (
-        <div key={tech.id} className="flex flex-col rounded-xl mx-4 my-2 p-2 duration-700 cursor-pointer hover:bg-off-white items-center justify-center">
-          <ImageView width={150} height={150} path={tech.img} alt={tech.label}/>
-          <SubTitle text={tech.label} color={"primary"} />
+    return (
+        <div className="flex flex-wrap my-3 justify-center">
+            {techs.map((tech) => (
+                <div
+                    key={tech.id}
+                    className="flex flex-col rounded-xl mx-4 my-2 p-2 duration-700 cursor-pointer hover:bg-primary items-center justify-center"
+                >
+                    <ImageView
+                        width={150}
+                        height={150}
+                        path={tech.img}
+                        alt={tech.label}
+                    />
+                    <SubTitle text={tech.label} color={"off-white"} />
+                </div>
+            ))}
         </div>
-      ))}
-    </div>
-  )
+    );
 }
