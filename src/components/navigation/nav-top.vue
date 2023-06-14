@@ -58,6 +58,7 @@ export default {
 
 .nav-item a {
     text-decoration: none;
+    color: #2a2f4f;
 }
 .nav-item {
     transition: 0.5s;
