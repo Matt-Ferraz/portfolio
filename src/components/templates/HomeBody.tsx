@@ -6,10 +6,12 @@ import MySkills from "../organisms/services";
 export default function HomeBody() {
     return (
         <main className="bg-off-white px-10">
-            <section className="min-h-screen scroll-smooth">
-                <Nav />
-                <AboutMeSection />
-                <div className="mt-64">
+            <section className="min-h-screen scroll-smooth fade-in">
+                <Nav text="Welcome" animated={true} />
+                <div className="top-in">
+                    <AboutMeSection />
+                </div>
+                <div className="mt-64 fade-in">
                     <MySkills />
                 </div>
                 <SocialMedia />
