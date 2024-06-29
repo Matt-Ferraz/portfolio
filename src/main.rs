@@ -6,8 +6,8 @@ use std::env;
 use std::path::Path;
 
 fn main() {
-    let listener = TcpListener::bind("127.0.0.1:7878").expect("Could not bind to address");
-    println!("Server running on http://127.0.0.1:7878");
+    let listener = TcpListener::bind("0.0.0.0:7878").expect("Could not bind to address");
+    println!("Server running on http://0.0.0.0:7878");
 
     for stream in listener.incoming() {
         match stream {
