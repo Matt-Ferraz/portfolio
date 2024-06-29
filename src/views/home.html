@@ -96,7 +96,7 @@
 
     <section>
         <h2>Work Experience</h2>
-        <ul style="list-style-type: none; padding: 0;">
+        <ul style="list-style-type: none; padding: 0;" id="works">
             <li style="margin-bottom: 10px;">
                 <strong style="color: #E0E0E0;">Software Engineer at Company A</strong> <br>
                 <span style="color: #B0B0B0;">January 2022 - Present</span><br>
@@ -125,4 +125,24 @@
     </footer>
 
 </body>
+
+
+<script>
+
+    function generateBenchRows() {
+        const el = document.querySelector('#works');
+
+        for(let i = 0; i < 1000; i++) {
+            const anchor = `<li style="margin-bottom: 10px;">
+                <strong style="color: #E0E0E0;">Software Engineer at Company ${i}</strong> <br>
+                <span style="color: #B0B0B0;">January 2022 - Present</span><br>
+                <span style="color: #B0B0B0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Developed and maintained web applications using React and Node.js.</span>
+            </li>`;
+            el.insertAdjacentHTML('beforeend', works);
+        }
+
+    }
+
+    generateBenchRows()
+</script>
 </html>
