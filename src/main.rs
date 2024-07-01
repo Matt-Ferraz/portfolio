@@ -6,8 +6,8 @@ use std::env;
 use std::path::Path;
 
 fn main() {
-    let listener = TcpListener::bind("0.0.0.0:7878").expect("Could not bind to address");
-    println!("Server running on http://0.0.0.0:7878");
+    let listener = TcpListener::bind("85.209.92.61:7878").expect("Could not bind to address");
+    println!("Server running on http://85.209.92.61:7878");
 
     for stream in listener.incoming() {
         match stream {
@@ -29,7 +29,7 @@ fn handle_connection(mut stream: TcpStream) {
     if buffer.starts_with(get) {
         let current_dir = env::current_dir().unwrap();
         let file_path = current_dir.join("src/views/home.html");
-        
+
         let mut file = match File::open(&file_path) {
             Ok(file) => file,
             Err(e) => {
@@ -40,7 +40,7 @@ fn handle_connection(mut stream: TcpStream) {
                 return;
             }
         };
-        
+
         let mut contents = String::new();
         if let Err(e) = file.read_to_string(&mut contents) {
             eprintln!("Failed to read file contents: {}", e);
